@@ -1,0 +1,18 @@
+GET http://localhost:8081/account/2
+
+### 0.100799999978853
+PUT http://localhost:8081/account/transfer-to/2
+Content-Type: application/json
+
+{
+  "toWalletAddress" : "0xAD3cC98804120866609697cc670354ac5661563e",
+  "amount" : 0.01
+}
+
+###
+POST http://localhost:8081/account/account-transaction/2
+Content-Type: application/json
+
+{
+  "isConfirmed": false
+}
